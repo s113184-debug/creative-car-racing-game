@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Car Racing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Creative Car Racing</h1>
+    <div id="timer-container">
+        <span>Time: <span id="time">3:05</span></span>
+    </div>
+    <div id="difficulty-screen">
+        <div class="menu-container">
+            <h2>Select Difficulty</h2>
+            <button id="easy-btn">Easy</button>
+            <button id="normal-btn">Normal</button>
+            <button id="hard-btn">Hard</button>
+            <button id="how-to-play-btn">How to Play</button>
+        </div>
+    </div>
+    <div id="how-to-play-screen" style="display: none;">
+        <h2>How to Play</h2>
+        <div class="instructions">
+            <p><strong>Goal:</strong> Complete 2 laps before the time runs out!</p>
+            <p><strong>Controls:</strong></p>
+            <ul>
+                <li><strong>Right Arrow:</strong> Accelerate</li>
+                <li><strong>Left Arrow:</strong> Brake / Reverse</li>
+                <li><strong>Up Arrow:</strong> Turn Left</li>
+                <li><strong>Down Arrow:</strong> Turn Right</li>
+            </ul>
+            <p><strong>Items:</strong></p>
+            <ul>
+                <li><img src="banana.png" alt="Banana" style="width: 25px; vertical-align: middle;"> : Makes you slip.</li>
+                <li><img src="player_car.png" alt="Shield" style="width: 15px; vertical-align: middle; filter: drop-shadow(0 0 2px gold) drop-shadow(0 0 5px gold);"> : Temporary immunity from crashes.</li>
+            </ul>
+            <p>Avoid crashing into other cars and stay on the track!</p>
+        </div>
+        <button id="back-to-menu-btn">Back</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div id="game-over-screen" style="display: none;">
+        <div class="menu-container">
+            <h2>Game Over</h2>
+            <button id="restart-btn">Try Again</button>
+            <button id="back-to-main-menu-btn">Back to Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
